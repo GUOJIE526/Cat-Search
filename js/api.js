@@ -14,3 +14,7 @@ export function fetchCats(limit, page, order, breedIds = []) {
   }
   return fetch(url).then((res) => res.json());
 }
+
+export function fetchBreeds() {
+  return fetch("https://api.thecatapi.com/v1/breeds").then((res) => res.json());
+}
