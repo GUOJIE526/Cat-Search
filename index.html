@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cat Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">Cat Search</h1>
+        <!-- 兩個dropdown的容器 -->
+        <div class="select-container">
+            <!-- 品種 -->
+            <div class="select-wrapper">
+                <button id="dropdown-button" class="dropdown-button" >
+                    請選擇品種
+                </button>
+                <div id="options" class="multi-select-dropdown_options hidden" >
+                    <div class="multi-select-dropdown_options_option">
+                        <input type="checkbox" />
+                        <label class="multi-select-drpdown_label">選項一</label>
+                    </div>
+                    <div class="multi-select-dropdown_options_option">
+                        <input type="checkbox" />
+                        <label class="multi-select-drpdown_label">選項二</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 排序 -->
+            <div class="select-wrapper">
+                <select name="order-select" id="order-select" class="order-select">
+                    <option value="DESC">由新到舊</option>
+                    <option value="DESC">由舊到新</option>
+                    <option value="DESC">隨機</option>
+                </select>
+            </div>
+        </div>
+        <div class="image-grid" id="image-grid">
+            <div class="col" id="col1">
+                <div class="card">
+                    <img src="https://cdn2.thecatapi.com/images/0SxW2SQ_S.jpg" class="card_img">
+                    <p>York Chocolate</p>
+                </div>
+            </div>
+            <div class="col" id="col2">
+                <div class="card">
+                    <img src="https://cdn2.thecatapi.com/images/7_rjG2-pc.jpg" class="card_img">
+                    <p>York Chocolate</p>
+                </div>
+            </div>
+            <div class="col" id="col3">
+                <div class="card">
+                    <img src="https://cdn2.thecatapi.com/images/7pCnjXd47.jpg" class="card_img">
+                    <p>York Chocolate</p>
+                </div>
+            </div>
+        </div>
+        <button id="load-more" class="load-more-button">load more...</button>
+    </div>
+    <div id="drawar" class="drawar open">
+        <img src="https://cdn2.thecatapi.com/images/7pCnjXd47.jpg" id="drawar_img" class="drawar_img"/>
+        
+        <div class="drawar_name-origin">
+            <h3 class="drawar_name-origin_name" id="drawar-breed-name">
+                British Shorthair
+            </h3>
+            <div class="drawar_name-origin_origin">
+                <img src="assets/location_icon.svg" alt="" />
+                    <span>United Kingdom</span>
+            </div>
+        </div>
+
+        <div class="drawar_horizontal-sep"></div>
+        <!-- 壽命 體重 -->
+        <div class="drawar_age-weight">
+            <div class="drawar_age-weight_data">
+                <p class="drawar_age-weight_number" id="drawar-lifespan">12-17</p>
+                <p class="drawar_age-weight_label">壽命</p>
+            </div>
+            <div class="drawar_age-weight_vertical-sep"></div>
+            <div class="drawar_age-weight_data">
+                <p class="drawar_age-weight_number" id="drawar-lifespan">5-9</p>
+                <p class="drawar_age-weight_label">公斤</p>
+            </div>
+        </div>
+        <div class="drawar_horizontal-sep"></div>
+
+        <div class="drawar_personality">
+            <p class="drawar_personality_title">性格</p>
+            <div class="drawar_personality_tags" id="temperament">
+                <span class="drawar_personality_tags_tag">親人</span>
+                <span class="drawar_personality_tags_tag">友善</span>
+                <span class="drawar_personality_tags_tag">活潑</span>
+            </div>
+        </div>
+
+        <div class="drawar_status" id="drawar-stats">
+            <div class="drawar_status_item">
+                <p class="drawar_status_item_title" id="intelligence">智力</p>
+                <div class="drawar_status_item_bar">
+                    <div class="drawar_status_item_bar_fill"></div>
+                </div>
+            </div>
+            <div class="drawar_status_item">
+                <p class="drawar_status_item_title" id="intelligence">親密度</p>
+                <div class="drawar_status_item_bar">
+                    <div class="drawar_status_item_bar_fill"></div>
+                </div>
+            </div>
+            <div class="drawar_status_item">
+                <p class="drawar_status_item_title" id="intelligence">活力</p>
+                <div class="drawar_status_item_bar">
+                    <div class="drawar_status_item_bar_fill"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
