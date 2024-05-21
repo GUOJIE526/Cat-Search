@@ -149,6 +149,10 @@ body{
     overflow: scroll;
 }
 
+.drawer i{
+    display: none;
+}
+
 .drawer.open{
     transform: translateX(0);
 }
@@ -283,4 +287,18 @@ body{
     position: relative;
     top: 1px;
     left: 1px;
+}
+
+@media (max-width:895px) {
+    .drawer i {
+        display: flex;
+        color: #fff;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        font-size: 30px;
+    }
 }
