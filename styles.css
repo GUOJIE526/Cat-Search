@@ -132,7 +132,11 @@ body{
     cursor: pointer;
 }
 
-.drawar{
+.load-more-button:hover{
+    background-color: #747474;
+}
+
+.drawer{
     position: fixed;
     right: 0;
     top: 0;
@@ -145,17 +149,17 @@ body{
     overflow: scroll;
 }
 
-.drawar.open{
+.drawer.open{
     transform: translateX(0);
 }
 
-.drawar_img{
+.drawer_img{
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.drawar_name-origin{
+.drawer_name-origin{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,14 +167,14 @@ body{
     margin: 10px 0;
 }
 
-.drawar_name-origin_name{
+.drawer_name-origin_name{
     margin: 0;
     font-family: "roboto" sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
 
-.drawar_name-origin_origin{
+.drawer_name-origin_origin{
     margin: 0;
     font-family: "roboto" sans-serif;
     font-size: 14px;
@@ -182,12 +186,12 @@ body{
     color: #747474;
 }
 
-.drawar_horizontal-sep{
+.drawer_horizontal-sep{
     border-top: 1px solid #e5e5e5;
     margin: 0.5rem 0px;
 }
 
-.drawar_age-weight{
+.drawer_age-weight{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -197,45 +201,45 @@ body{
     padding: 0 2rem;
 }
 
-.drawar_age-weight_data{
+.drawer_age-weight_data{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
 }
 
-.drawar_age-weight_number{
+.drawer_age-weight_number{
     font-weight: 700;
 }
 
-.drawar_age-weight_label{
+.drawer_age-weight_label{
     font-weight: 500;
     color: #747474;
 }
 
-.drawar_age-weight_vertical-sep{
+.drawer_age-weight_vertical-sep{
     border-left: 1px solid #e5e5e5;
     height: 38px;
 }
 
-.drawar_personality{
+.drawer_personality{
     margin: 16px;
 }
 
-.drawar_personality_title{
+.drawer_personality_title{
     font-size: 14px;
     font-weight: 600;
     font-family: "roboto" sans-serif;
 }
 
-.drawar_personality_tags{
+.drawer_personality_tags{
     display: flex;
     flex-direction: row;
     gap: 8px;
     margin-top: 12px;
 }
 
-.drawar_personality_tags_tag{
+.drawer_personality_tags_tag{
     font-size: 12px;
     font-weight: 400;
     font-family: "roboto" sans-serif;
@@ -245,12 +249,12 @@ body{
     color: #2e1cc4;
 }
 
-.drawar_status{
+.drawer_stats{
     display: flex;
     flex-direction: column;
 }
 
-.drawar_status_item{
+.drawer_stats_item{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -258,20 +262,20 @@ body{
     justify-content: space-between;
 }
 
-.drawar_status_item_title{
+.drawer_stats_item_title{
     font-size: 14px;
     font-weight: 600;
     font-family: "roboto" sans-serif;
 }
 
-.drawar_status_item_bar{
+.drawer_stats_item_bar{
     border: 1px solid #e5e5e5;
     border-radius: 25px;
     width: 204px;
     height: 12px;
 }
 
-.drawar_status_item_bar_fill{
+.drawer_stats_item_bar_fill{
     background: linear-gradient(270deg, #2e1cc4 4.58%, #8846db 100%);
     width: 50%;
     height: 8px;
