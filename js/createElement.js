@@ -32,3 +32,28 @@ export function createBreedOption(breed, handleBreedOptionChange) {
   option.appendChild(br);
   return option;
 }
+
+export function createTempItem(temperament) {
+  const tempItem = document.createElement("span");
+  tempItem.className = "drawer_personality_tags_tag";
+  tempItem.innerHTML = temperament;
+  return tempItem;
+}
+
+export function createDrawerStatsItem(displayName, score) {
+  const statsItem = document.createElement("div");
+  statsItem.className = "drawer_stats_item";
+  const itemTitle = document.createElement("span");
+  itemTitle.className = "drawer_stats_item_title";
+  itemTitle.innerHTML = `${displayName}：`;
+  const bar = document.createElement("div");
+  bar.className = "drawer_stats_item_bar";
+  const fill = document.createElement("div");
+  fill.className = "drawer_stats_item_bar_fill";
+  fill.style.width = `${score * 20}%`;
+  bar.appendChild(fill);
+  statsItem.appendChild(itemTitle);
+  statsItem.appendChild(bar);
+
+  return statsItem;
+}
