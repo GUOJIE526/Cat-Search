@@ -37,8 +37,8 @@
             <div class="select-wrapper">
                 <select name="order-select" id="order-select" class="order-select">
                     <option value="DESC">由新到舊</option>
-                    <option value="DESC">由舊到新</option>
-                    <option value="DESC">隨機</option>
+                    <option value="ASC">由舊到新</option>
+                    <option value="RAND">隨機</option>
                 </select>
             </div>
         </div>
@@ -64,60 +64,62 @@
         </div>
         <button id="load-more" class="load-more-button">load more...</button>
     </div>
-    <div id="drawar" class="drawar">
-        <img src="https://cdn2.thecatapi.com/images/7pCnjXd47.jpg" id="drawar_img" class="drawar_img"/>
+    <div id="drawer" class="drawer">
+        <img src="https://cdn2.thecatapi.com/images/7pCnjXd47.jpg" 
+             id="drawer-image" 
+             class="drawer_img"/>
         
-        <div class="drawar_name-origin">
-            <h3 class="drawar_name-origin_name" id="drawar-breed-name">
+        <div class="drawer_name-origin">
+            <h3 class="drawer_name-origin_name" id="drawer-breed-name">
                 British Shorthair
             </h3>
-            <div class="drawar_name-origin_origin">
+            <div class="drawer_name-origin_origin">
                 <img src="assets/location_icon.svg" alt="" />
-                    <span>United Kingdom</span>
+                    <span id="drawer-origin-text">United Kingdom</span>
             </div>
         </div>
 
-        <div class="drawar_horizontal-sep"></div>
+        <div class="drawer_horizontal-sep"></div>
         <!-- 壽命 體重 -->
-        <div class="drawar_age-weight">
-            <div class="drawar_age-weight_data">
-                <p class="drawar_age-weight_number" id="drawar-lifespan">12-17</p>
-                <p class="drawar_age-weight_label">壽命</p>
+        <div class="drawer_age-weight">
+            <div class="drawer_age-weight_data">
+                <p class="drawer_age-weight_number" id="drawer-lifespan">12-17</p>
+                <p class="drawer_age-weight_label">壽命</p>
             </div>
-            <div class="drawar_age-weight_vertical-sep"></div>
-            <div class="drawar_age-weight_data">
-                <p class="drawar_age-weight_number" id="drawar-lifespan">5-9</p>
-                <p class="drawar_age-weight_label">公斤</p>
-            </div>
-        </div>
-        <div class="drawar_horizontal-sep"></div>
-
-        <div class="drawar_personality">
-            <p class="drawar_personality_title">性格</p>
-            <div class="drawar_personality_tags" id="temperament">
-                <span class="drawar_personality_tags_tag">親人</span>
-                <span class="drawar_personality_tags_tag">友善</span>
-                <span class="drawar_personality_tags_tag">活潑</span>
+            <div class="drawer_age-weight_vertical-sep"></div>
+            <div class="drawer_age-weight_data">
+                <p class="drawer_age-weight_number" id="drawer-lifespan">5-9</p>
+                <p class="drawer_age-weight_label">公斤</p>
             </div>
         </div>
+        <div class="drawer_horizontal-sep"></div>
 
-        <div class="drawar_status" id="drawar-stats">
-            <div class="drawar_status_item">
-                <p class="drawar_status_item_title" id="intelligence">智力</p>
-                <div class="drawar_status_item_bar">
-                    <div class="drawar_status_item_bar_fill"></div>
+        <div class="drawer_personality">
+            <p class="drawer_personality_title">性格</p>
+            <div class="drawer_personality_tags" id="temperament">
+                <span class="drawer_personality_tags_tag">親人</span>
+                <span class="drawer_personality_tags_tag">友善</span>
+                <span class="drawer_personality_tags_tag">活潑</span>
+            </div>
+        </div>
+
+        <div class="drawer_stats" id="drawer-stats">
+            <div class="drawer_stats_item">
+                <p class="drawer_stats_item_title" id="intelligence">智力</p>
+                <div class="drawer_stats_item_bar">
+                    <div class="drawer_stats_item_bar_fill"></div>
                 </div>
             </div>
-            <div class="drawar_status_item">
-                <p class="drawar_status_item_title" id="intelligence">親密度</p>
-                <div class="drawar_status_item_bar">
-                    <div class="drawar_status_item_bar_fill"></div>
+            <div class="drawer_stats_item">
+                <p class="drawer_stats_item_title" id="intelligence">親密度</p>
+                <div class="drawer_stats_item_bar">
+                    <div class="drawer_stats_item_bar_fill"></div>
                 </div>
             </div>
-            <div class="drawar_status_item">
-                <p class="drawar_status_item_title" id="intelligence">活力</p>
-                <div class="drawar_status_item_bar">
-                    <div class="drawar_status_item_bar_fill"></div>
+            <div class="drawer_stats_item">
+                <p class="drawer_stats_item_title" id="intelligence">活力</p>
+                <div class="drawer_stats_item_bar">
+                    <div class="drawer_stats_item_bar_fill"></div>
                 </div>
             </div>
 
