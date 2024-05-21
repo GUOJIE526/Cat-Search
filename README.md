@@ -15,4 +15,4 @@ Cat Search 是一個用於搜索貓咪品種並顯示其詳細信息的應用程
 - [The Cat API](https://thecatapi.com/)
 
 ## 連結
-(Cat Search)[https://guojie526.github.io/Cat-Search/]
+
