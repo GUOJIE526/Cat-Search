@@ -175,4 +175,10 @@ export function addCloseDrawerListener() {
       drawer.classList.remove("open");
     }
   });
+
+  // 手機畫面關閉按鈕
+  const closeButton = document.getElementById("close-icon");
+  closeButton.addEventListener("click", () => {
+    drawer.classList.remove("open");
+  });
 }
